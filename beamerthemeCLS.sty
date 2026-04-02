@@ -160,6 +160,11 @@
     \node[anchor=west, text width=0.48\paperwidth, align=left] at
       ([xshift=1.3cm, yshift=-2.3cm]current page.west)
       {\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate};
+
+    % Satellite image — right side, clipped to fit
+    \node[anchor=east, inner sep=0pt] at
+      ([xshift=-0.3cm]current page.east)
+      {\includegraphics[height=\paperheight, keepaspectratio]{images/sentinel1.jpg}};
   \end{tikzpicture}
 }
 \makeatother

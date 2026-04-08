@@ -77,16 +77,26 @@
 % ---------------------------------------------------------------------------
 % Beamer font assignments
 % ---------------------------------------------------------------------------
-\setbeamerfont{title}{size=\Large, series=\bfseries}
-\setbeamerfont{subtitle}{size=\normalsize}
-\setbeamerfont{author}{size=\normalsize}
-\setbeamerfont{date}{size=\small}
-\setbeamerfont{institute}{size=\small}
-\setbeamerfont{frametitle}{size=\large, series=\bfseries}
-\setbeamerfont{framesubtitle}{size=\normalsize}
-\setbeamerfont{section title}{size=\Large, series=\bfseries}
+% Body text: ~7pt (scriptsize) instead of default ~11pt
+\setbeamerfont{normal text}{size=\scriptsize}
+\setbeamerfont{title}{size=\large, series=\bfseries}
+\setbeamerfont{subtitle}{size=\small}
+\setbeamerfont{author}{size=\small}
+\setbeamerfont{date}{size=\scriptsize}
+\setbeamerfont{institute}{size=\scriptsize}
+\setbeamerfont{frametitle}{size=\normalsize, series=\bfseries}
+\setbeamerfont{framesubtitle}{size=\scriptsize}
+\setbeamerfont{section title}{size=\large, series=\bfseries}
 \setbeamerfont{footline}{size=\tiny}
-\setbeamerfont{page number in head/foot}{size=\scriptsize}
+\setbeamerfont{page number in head/foot}{size=\tiny}
+\setbeamerfont{block title}{size=\scriptsize, series=\bfseries}
+\setbeamerfont{block body}{size=\scriptsize}
+\setbeamerfont{block title alerted}{size=\scriptsize, series=\bfseries}
+\setbeamerfont{block body alerted}{size=\scriptsize}
+\setbeamerfont{block title example}{size=\scriptsize, series=\bfseries}
+\setbeamerfont{block body example}{size=\scriptsize}
+\setbeamerfont{item}{size=\scriptsize}
+\setbeamerfont{description item}{size=\scriptsize, series=\bfseries}
 
 % ---------------------------------------------------------------------------
 % Remove default navigation symbols

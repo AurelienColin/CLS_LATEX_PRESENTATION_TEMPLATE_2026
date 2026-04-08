@@ -77,26 +77,28 @@
 % ---------------------------------------------------------------------------
 % Beamer font assignments
 % ---------------------------------------------------------------------------
-% Body text: ~7pt (scriptsize) instead of default ~11pt
-\setbeamerfont{normal text}{size=\scriptsize}
+% Body text: 7pt
+\newcommand{\clsbodysize}{\fontsize{7}{8.4}\selectfont}
+\newcommand{\clsblocktitlesize}{\fontsize{7.5}{9}\selectfont}
+\setbeamerfont{normal text}{size=\clsbodysize}
 \setbeamerfont{title}{size=\large, series=\bfseries}
 \setbeamerfont{subtitle}{size=\small}
 \setbeamerfont{author}{size=\small}
-\setbeamerfont{date}{size=\scriptsize}
-\setbeamerfont{institute}{size=\scriptsize}
+\setbeamerfont{date}{size=\clsbodysize}
+\setbeamerfont{institute}{size=\clsbodysize}
 \setbeamerfont{frametitle}{size=\normalsize, series=\bfseries}
-\setbeamerfont{framesubtitle}{size=\scriptsize}
+\setbeamerfont{framesubtitle}{size=\clsbodysize}
 \setbeamerfont{section title}{size=\large, series=\bfseries}
-\setbeamerfont{footline}{size=\tiny}
-\setbeamerfont{page number in head/foot}{size=\tiny}
-\setbeamerfont{block title}{size=\scriptsize, series=\bfseries}
-\setbeamerfont{block body}{size=\scriptsize}
-\setbeamerfont{block title alerted}{size=\scriptsize, series=\bfseries}
-\setbeamerfont{block body alerted}{size=\scriptsize}
-\setbeamerfont{block title example}{size=\scriptsize, series=\bfseries}
-\setbeamerfont{block body example}{size=\scriptsize}
-\setbeamerfont{item}{size=\scriptsize}
-\setbeamerfont{description item}{size=\scriptsize, series=\bfseries}
+\setbeamerfont{footline}{size=\fontsize{5}{6}\selectfont}
+\setbeamerfont{page number in head/foot}{size=\fontsize{5}{6}\selectfont}
+\setbeamerfont{block title}{size=\clsblocktitlesize, series=\bfseries}
+\setbeamerfont{block body}{size=\clsbodysize}
+\setbeamerfont{block title alerted}{size=\clsblocktitlesize, series=\bfseries}
+\setbeamerfont{block body alerted}{size=\clsbodysize}
+\setbeamerfont{block title example}{size=\clsblocktitlesize, series=\bfseries}
+\setbeamerfont{block body example}{size=\clsbodysize}
+\setbeamerfont{item}{size=\clsbodysize}
+\setbeamerfont{description item}{size=\clsbodysize, series=\bfseries}
 
 % ---------------------------------------------------------------------------
 % Remove default navigation symbols

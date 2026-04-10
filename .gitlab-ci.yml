@@ -1,0 +1,14 @@
+stages:
+  - build
+
+build_pdf:
+  stage: build
+  image: ghcr.io/wtfjoke/tectonic-docker:latest
+  rules:
+    - if: $CI_COMMIT_TAG
+  script:
+    - tectonic CLS_LATEX_PRESENTATION_TEMPLATE_2026.tex
+  artifacts:
+    paths:
+      - "*.pdf"
+    expire_in: 1 pipeline

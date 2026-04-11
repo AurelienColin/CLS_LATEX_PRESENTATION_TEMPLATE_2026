@@ -132,11 +132,6 @@
       (current page.north west) rectangle
       ([xshift=0.55\paperwidth]current page.south west);
 
-    % Semi-transparent white overlay on the right to soften the edge
-    \fill[white, opacity=0.0]
-      ([xshift=0.50\paperwidth]current page.north west) rectangle
-      (current page.south east);
-
     % CLS logo — top-left on the gradient (white version)
     \node[anchor=north west, inner sep=0pt] (clslogo) at
       ([xshift=0.9cm, yshift=-1.2cm]current page.north west)
@@ -217,12 +212,12 @@
     \fill[left color=CLSGradientBlue, right color=CLSGradientGreen,
           rounded corners=2pt]
       ([xshift=0cm, yshift=0cm]current page.south west) rectangle
-      ([xshift=0.52\paperwidth, yshift=0.45cm]current page.south west);
+      ([xshift=0.58\paperwidth, yshift=0.45cm]current page.south west);
 
     % Presentation title and date — inside the gradient bar, bottom-left
     \node[anchor=west, font=\tiny, text=CLSWhite] at
       ([xshift=0.3cm, yshift=0.22cm]current page.south west)
-      {\inserttitle{} -- \insertdate};
+      {\insertshorttitle{} -- \insertdate};
 
     % Slide number — bottom-right
     \node[anchor=south east, font=\scriptsize, text=CLSDarkGray] at

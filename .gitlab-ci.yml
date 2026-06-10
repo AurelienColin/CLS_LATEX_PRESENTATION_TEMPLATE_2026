@@ -11,4 +11,4 @@ build_pdf:
   artifacts:
     paths:
       - "*.pdf"
-    expire_in: 1 pipeline
+    expire_in: 1 week

@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# Validate .bib files: DOI presence, key format, resolution, and field accuracy.
 from __future__ import annotations
 
 import json
